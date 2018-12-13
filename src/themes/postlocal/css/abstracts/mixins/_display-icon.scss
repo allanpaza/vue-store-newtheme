@@ -1,0 +1,20 @@
+@mixin addIcon($primary) {
+  position: absolute;
+  color: $primary;
+  top: 20px;
+  right: 20px;
+  font-size: 1px;
+  background-color: white;
+  border: 2px solid $primary;
+  border-radius: 10px 0px 10px 0px;
+  opacity: 0;
+  transition: 0.7s;
+
+  @media (max-width: 767px) {
+    opacity: 1;
+  }
+
+  i {
+    font-size: 35px;
+  }
+}

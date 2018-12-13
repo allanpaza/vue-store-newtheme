@@ -1,0 +1,26 @@
+{
+  "slides": [
+    {
+      "title": "Your Best Stores Online",
+      "subtitle": "PostLocal",
+      "button_text": "Shop now",
+      "image": "/assets/frontstore.jpg",
+      "link": "/c/women-20"
+    },
+    {
+      "title": "Find your Shop",
+      "subtitle": "Search by Location",
+      "button_text": "Shop now",
+      "image": "/assets/frontstore.jpg",
+      "link": "/c/men-11"
+    },
+    {
+      "title": "The Best Prices",
+      "subtitle": "Fast and Trust Delivery",
+      "button_text": "Shop now",
+      "image": "/assets/frontstore.jpg",
+      "link": "/c/training-9"
+    }
+  ],
+  "total": "3"
+}

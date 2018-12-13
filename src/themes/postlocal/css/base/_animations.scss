@@ -1,0 +1,94 @@
+//transition
+
+$motion-main: cubic-bezier(0.4, 0.0, 0.2, 1);
+$duration-main: .25s;
+
+$motion-exit: cubic-bezier(0.4, 0.0, 1, 1);
+$duration-exit: .2s;
+
+.fade-enter-active {
+  transition: opacity $duration-main;
+}
+
+.fade-leave-active {
+  transition: opacity $duration-exit;
+}
+
+.fade-enter,
+.fade-leave-to {
+  opacity: 0
+}
+
+.fade-in {
+
+  &-down-enter-active,
+  &-up-enter-active {
+    transition: all $duration-main $motion-main;
+  }
+
+  &-down-leave-active,
+  &-up-leave-active {
+    transition: all $duration-exit $motion-exit;
+  }
+
+  &-down-enter,
+  &-down-leave-to,
+  &-up-enter,
+  &-up-leave-to {
+    opacity: 0;
+  }
+
+  &-down-enter,
+  &-down-leave-to {
+    transform: translateY(-100%);
+  }
+
+  &-up-enter,
+  &-up-leave-to {
+    transform: translateY(100%);
+  }
+}
+
+//animations
+
+@keyframes images-lazy-loading {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+[lazy="loaded"] {
+  animation: images-lazy-loading;
+  animation-duration: 0.3s;
+}
+
+@keyframes ripple-effect {
+  0% {
+    transform: translate(-50%, -50%) scale(0);
+  }
+
+  20% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(3rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
